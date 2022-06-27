@@ -8,7 +8,11 @@ Nous allons apprendre
 
 // Les variables
 
-a=10
-console.error(a);
+a=10  // 10 rentre dans la variable A
 b=50
+c="80"
+console.error(a);
 console.error(a+b);
+console.error(typeof(a));
+console.error(a+c);
+console.error(a+parseInt(c));
