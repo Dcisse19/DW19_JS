@@ -40,10 +40,19 @@ console.error("Nous avons du sel en Qu. de " + SEL + "g. Nous avons du sucre en 
 3. Afficher quel âge aura l'utilisateur dans 2 ans. */
 
 // age = 0;
-let age = prompt("Quel est votre âge ?");
-console.info("Vous avez " + age + " ans.");
+// let age = prompt("Quel est votre âge ?");
+// console.info("Vous avez " + age + " ans.");
 
-agefutur = (parseInt(age) + 2);
-console.info("Dans 2 ans, vous aurez " + agefutur + " ans.");
+// agefutur = (parseInt(age) + 2);
+// console.info("Dans 2 ans, vous aurez " + agefutur + " ans.");
 
-// console.error(AGE);
+/* EXO 3 :
+1. Demander le prix d'un article via prompt
+2. Afficher dans la console : "l'article vaut 45€"
+3. Afficher dans la console : "l'article vaut 50€ TTC (prix * 1,2) */
+
+let prix = prompt("Quel est le prix de cet article HT ?");
+console.info("L'article vaut " + prix + " € HT.");
+
+prixttc = (parseInt(prix) * 1.2);
+console.info("L'article vaut " + prixttc + " € TTC.");
