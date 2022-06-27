@@ -51,8 +51,21 @@ console.error("Nous avons du sel en Qu. de " + SEL + "g. Nous avons du sucre en 
 2. Afficher dans la console : "l'article vaut 45€"
 3. Afficher dans la console : "l'article vaut 50€ TTC (prix * 1,2) */
 
-let prix = prompt("Quel est le prix de cet article HT ?");
-console.info("L'article vaut " + prix + " € HT.");
+// let prix = prompt("Quel est le prix de cet article HT ?");
+// console.info("L'article vaut " + prix + " € HT.");
 
-prixttc = (parseInt(prix) * 1.2);
-console.info("L'article vaut " + prixttc + " € TTC.");
+// prixttc = (parseInt(prix) * 1.2);
+// console.info("L'article vaut " + prixttc + " € TTC.");
+
+
+/* EXO 4 
+Afficher dans la console : aujourd'hui nous sommes le date */
+
+d = new Date();
+let jour = d.getDate();
+let month = d.getMonth();
+mois = month + 1;
+let année = d.getFullYear();
+
+// let date = new Date(year, month, day);
+console.info("Aujourd'hui nous somme le : " + jour + "/0" + mois + "/" +  année);
