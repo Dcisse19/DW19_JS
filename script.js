@@ -68,4 +68,4 @@ mois = month + 1;
 let année = d.getFullYear();
 
 // let date = new Date(year, month, day);
-console.info("Aujourd'hui nous somme le : " + jour + "/0" + mois + "/" +  année);
+console.info("Aujourd'hui, nous sommes le : " + jour + "/0" + mois + "/" +  année + ".");
