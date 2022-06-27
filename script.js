@@ -27,7 +27,7 @@ SUCRE = 60;
 console.error("Nous avons du sel en Q. de " + SEL + "g. Nous avons du sucre en quantité de " + SUCRE + "g.")
 
 // Le code inverse les variables
-temp = SEL;
+temp = SEL;  //variable temporaire pour stocker la quantité initiale de sel
 SEL = SUCRE;
 SUCRE = temp;
 
