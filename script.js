@@ -1,5 +1,4 @@
 
-
 /* Commentaire :
 Nous allons apprendre 
 1. Les variables
@@ -9,5 +8,7 @@ Nous allons apprendre
 
 // Les variables
 
-console.error("test");
-document.write("very pleased to meet you!");
+a=10
+console.error(a);
+b=50
+console.error(a+b);
