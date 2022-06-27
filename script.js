@@ -40,10 +40,10 @@ console.error("Nous avons du sel en Qu. de " + SEL + "g. Nous avons du sucre en 
 3. Afficher quel âge aura l'utilisateur dans 2 ans. */
 
 // age = 0;
-age = prompt("Quel est votre âge ?");
-console.error("Vous avez " + age + " ans.");
+let age = prompt("Quel est votre âge ?");
+console.info("Vous avez " + age + " ans.");
 
 agefutur = (parseInt(age) + 2);
-console.error("Dans 2 ans, vous aurez " + agefutur + " ans.");
+console.info("Dans 2 ans, vous aurez " + agefutur + " ans.");
 
 // console.error(AGE);
