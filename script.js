@@ -25,3 +25,11 @@ console.error(a+parseInt(c));   //transforme C en nombre et addition
 SEL = 90;
 SUCRE = 60;
 console.error("Nous avons du sel en Q. de " + SEL + "g. Nous avons du sucre en quantité de " + SUCRE + "g.")
+
+// Le code inverse les variables
+temp = SEL;
+SEL = SUCRE;
+SUCRE = temp;
+
+console.error("Nous avons du sel en Q. de " + SEL + "g. Nous avons du sucre en quantité de " + SUCRE + "g.")
+
