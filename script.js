@@ -27,9 +27,23 @@ SUCRE = 60;
 console.error("Nous avons du sel en Q. de " + SEL + "g. Nous avons du sucre en quantité de " + SUCRE + "g.")
 
 // Le code inverse les variables
-temp = SEL;  //variable temporaire pour stocker la quantité initiale de sel
-SEL = SUCRE;
-SUCRE = temp;
+temp = SEL;  //variable temporaire pour stocker la quantité initiale de sel (temp = 90)
+SEL = SUCRE;  // SEL prend la valeur de sucre ( SEL = 60)
+SUCRE = temp;  //SUCRE prend la valeur de la variable temporaire (SUCRE = 90)
 
-console.error("Nous avons du sel en Q. de " + SEL + "g. Nous avons du sucre en quantité de " + SUCRE + "g.")
+console.error("Nous avons du sel en Qu. de " + SEL + "g. Nous avons du sucre en Qu. de " + SUCRE + "g.")
 
+
+/* EX0 2 :
+1.Récupérer l'âge de l'utilisateur
+2. Afficher l'âge de l'utilisateur dans la console
+3. Afficher quel âge aura l'utilisateur dans 2 ans. */
+
+// age = 0;
+age = prompt("Quel est votre âge ?");
+console.error("Vous avez " + age + " ans.");
+
+agefutur = (parseInt(age) + 2);
+console.error("Dans 2 ans, vous aurez " + agefutur + " ans.");
+
+// console.error(AGE);
