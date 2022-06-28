@@ -41,9 +41,19 @@
 /**
  * *EXO 4 : Afficher toutes les table de multiplication dans la console
  */
-for(i=1; i<10; i++) {
-    console.info("table de " + i)
-    for(j=0; j<11; j++) {
-        console.info(i+"*"+ j + "=" + j*i)
-    } 
+// for(i=1; i<10; i++) {
+//     console.info("table de " + i + " :")
+//     for(j=0; j<11; j++) {
+//         console.info(i+" * "+ j + " = " + j*i)
+//     } 
+// } 
+/**
+* *EXO 4 : Afficher toutes les table des additions dans la console
+*/
+for(i=1; i<11; i++) {
+   console.info("TABLE DE " + i + " :")
+   for(j=0; j<11; j++) {
+    k = j+i   
+    console.info(i+" + "+ j + " = " + k)
+   } 
 } 
