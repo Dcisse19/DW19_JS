@@ -6,7 +6,7 @@ Nous allons apprendre
 3. Les boucles
 4. Les fonctions */
 
-// Les variables
+// ======= Les variables ==============
 
 a=10  // 10 rentre dans la variable A
 b=50
