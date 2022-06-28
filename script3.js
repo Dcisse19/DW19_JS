@@ -8,7 +8,7 @@
 /**
  * *EXO 1 : Afficher les nombres de 1 à 100 dans la console
  */
-for(i=1; i<101; i++) {
+for(i=0; i<101; i++) {
     console.info(i)
 }   
 
@@ -24,5 +24,5 @@ for(a=100; a<201; a++) {
  * *EXO 3 : Afficher la table de multiplication de 2 dans la console
  */
 for(b=0; b<11; b++) {
-    console.info(b*2)
+    console.info("2*"+ b + "=" + b*2)
 } 
