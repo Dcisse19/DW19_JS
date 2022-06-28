@@ -43,7 +43,7 @@ afficher('Foity');
 * ecrire une fonction avec un paramètre numérique puis afficher ce nombre en ajoutant 2
 */
 function plustwo(nbre){
-    console.info('Si on ajoute 2, on obtient : ' + (nbre + 2))
+    console.info('Si on ajoute 2 à ' + nbre + ', on obtient : ' + (nbre + 2))
 }
 plustwo(7);
 
@@ -53,10 +53,10 @@ plustwo(7);
 
 function signe(nbre){
     if (nbre < 0 ) {
-    console.info("Ce nombre est négatif")
+    console.info("Le nombre " + nbre + " est négatif")
 }
 if ((nbre > 0 || nbre == 0)) {
-    console.info("Ce nombre est positif")
+    console.info("Le nombre " + nbre + " est positif")
 }
 }
 signe(7);
@@ -66,10 +66,12 @@ signe(7);
 */
 function parite(nbre){
      if (nbre % 2 == 0) {
-     console.info("Ce nombre est pair")
+     console.info("Le nombre " + nbre + " est pair")
  }
  else {
-     console.info("Ce nombre est impair")
+     console.info("Le nombre " + nbre + " est impair")
  } 
 }
 parite(7);
+
+plustwo(13), signe(-4), parite(9)
