@@ -50,10 +50,24 @@
 /**
 * *EXO 4 : Afficher toutes les table des additions dans la console
 */
-for(i=1; i<11; i++) {
-   console.info("TABLE DE " + i + " :")
-   for(j=0; j<11; j++) {
-    k = j+i   
-    console.info(i+" + "+ j + " = " + k)
-   } 
-} 
+// for(i=1; i<11; i++) {
+//    console.info("TABLE DE " + i + " :")
+//    for(j=0; j<11; j++) {
+//     k = j+i   
+//     console.info(i+" + "+ j + " = " + k)   // ou (j+i)
+//    } 
+// } 
+
+/**
+**EXO 5 : Afficher le caractère "*" dans la console 100*
+*/
+for(l=0; l<100; l++) {
+    console.info("*");
+}
+
+/**
+**EXO 6 : Afficher un carré d'etoiles de 5 dans la console 
+*/
+for(m=1; m<6; m++) {
+    console.info(m + " *****");
+}
