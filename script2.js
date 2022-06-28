@@ -20,17 +20,17 @@
  * Demander avec prompt un nombre à l'utilisateur
  * Afficher dans la console se ce nombre est positif ou negatif
  */
-nbre = prompt ("Veuillez entre un nombre");
-nbre = parseInt(nbre);
-if (nbre < 0  && typeof(nbre) === 'number' ) {
-    console.info("Ce nombre est négatif")
-}
-if ((nbre > 0 || nbre == 0) && typeof(nbre) === 'number') {
-    console.info("Ce nombre est positif")
-}
-else {
-    console.info("Ceci n'est pas un nombre")
-}  
+// nbre = prompt ("Veuillez entre un nombre");
+// nbre = parseInt(nbre);
+// if (nbre < 0  && typeof(nbre) === 'number' ) {
+//     console.info("Ce nombre est négatif")
+// }
+// if ((nbre > 0 || nbre == 0) && typeof(nbre) === 'number') {
+//     console.info("Ce nombre est positif")
+// }
+// else {
+//     console.info("Ceci n'est pas un nombre")
+// }  
 
 /***  EXERCICE 2
  * Demander avec prompt un nombre à l'utilisateur
@@ -54,9 +54,9 @@ else {
  * si non rien ...
  * 
  */
-// myname = 'diambere';
-// yourname = prompt('Quel est votre prénom ?');
-// if (myname == yourname) {
-//     console.info('Sympa, vous avez le même prénom que moi')
-// }
-// else {}
+myname = 'diambere';
+yourname = prompt('Quel est votre prénom ?');
+if (myname == yourname) {
+    console.info('Sympa, vous avez le même prénom que moi.')
+}
+else {}
