@@ -57,7 +57,14 @@ console.error("Nous avons du sel en Qu. de " + SEL + "g. Nous avons du sucre en 
 // prixttc = (parseInt(prix) * 1.2);
 // console.info("L'article vaut " + prixttc + " € TTC.");
 
+/* ENTRAINEMENT */
 
+// let name = prompt("Comment tu t'appelles ?");
+// // window.alert("Salut " + name + ". Commment tu vas ? ");
+// let answer = prompt("Salut " + name + ". Commment tu vas ? ");
+
+// if (answer = "bien") {
+// window.alert("Génial !");}
 /* EXO 4 
 Afficher dans la console : aujourd'hui nous sommes le date */
 
@@ -69,3 +76,4 @@ let année = d.getFullYear();
 
 // let date = new Date(year, month, day);
 console.info("Aujourd'hui, nous sommes le : " + jour + "/0" + mois + "/" +  année + ".");
+
