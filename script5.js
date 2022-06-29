@@ -72,9 +72,9 @@ function write() {
  */
 document.getElementById('monbouton').addEventListener("click", mafonction3)
 function mafonction3() {
-    compteur=parseInt(document.getElementById("madiv2").innerHTML);
-    compteur=(compteur*2);
-    document.getElementById("madiv2").innerHTML=compteur;
+    compteur = parseInt(document.getElementById("madiv2").innerHTML);
+    compteur = (compteur * 2);
+    document.getElementById("madiv2").innerHTML = compteur;
 }
 
 /**
@@ -89,7 +89,7 @@ function age() {
     }
     if (parseInt(document.getElementById('montexte2').value) < 18) {
         document.getElementById('madiv3').innerHTML = "Vous êtes mineur"
-    } 
+    }
     if (parseInt(document.getElementById('montexte2').value) == 18) {
         document.getElementById('madiv3').innerHTML = "Vous êtes pile majeur"
     }
@@ -101,17 +101,62 @@ function age() {
  * lorsqu'on clique
  * dans la div on a la table de multiplication correspondante
 */
+// document.getElementById('enternb').value = "Entrer un nombre de 1 à 9"
+
+// document.getElementById('multipl').addEventListener("click", multiplication)
+// function multiplication() {
+//     nombre = parseInt(document.getElementById('enternb').value)
+//     document.getElementById('madiv4').innerHTML = "Table de : " + nombre
+//     var b;
+//     for(b=0; b<11; b++) {
+//         document.getElementById('madiv5').innerHTML=(nombre +"*"+ b + "=" + b*nombre) + " " +        document.getElementById('madiv5').innerHTML
+//         console.info(nombre +"*"+ b + "=" + b*nombre);
+//     }
+// }
+
 document.getElementById('enternb').value = "Entrer un nombre de 1 à 9"
 
 document.getElementById('multipl').addEventListener("click", multiplication)
 function multiplication() {
     nombre = parseInt(document.getElementById('enternb').value)
     document.getElementById('madiv4').innerHTML = "Table de : " + nombre
-    var b;
-    for(b=0; b<11; b++) {
-        document.getElementById('madiv5').innerHTML=(nombre +"*"+ b + "=" + b*nombre)
-        console.info(nombre +"*"+ b + "=" + b*nombre);
-
+    for (b = 0; b < 11; b++) {
+        document.getElementById('madiv4').innerHTML += "<br/ >" + nombre + "*" + b + "=" + (b * nombre)
     }
 }
 
+/**
+ * EXO 1 : LES IF ?
+ * EXO 2 : CREEZ UN CHAMP TEXTE, UN BOUTON, UNE DIV 
+ * SI J ECRIS DANS LE CHAMPS TEXTE LE NOMBRE 5
+ * JE VAIS AVOIR LE RESULTAT 1 + 2 + 3 + 4 + 5 = 
+ */
+document.getElementById('number').value = "Entrer un nombre"
+document.getElementById('addition').addEventListener("click", fct_addition);
+function fct_addition() {
+
+    l = 0
+    nbr = parseInt(document.getElementById('number').value);
+    if (isNaN(nbr)) {
+        return;
+    }
+    document.getElementById('addition_div').innerHTML = "L'addition des nombres jusqu'à " + nbr + " donne : "
+    for (i = 1; i < nbr + 1; i++) {
+        l = l + i
+        document.getElementById('addition_div').innerHTML += i + "+"
+    }
+    document.getElementById('addition_div').innerHTML += "=" + l
+}
+
+
+// document.getElementById('addition').addEventListener("click", fct_addition);
+// function fct_addition() {
+//     l = 1
+//     nbr = parseInt(document.getElementById('number').value);
+//     document.getElementById('addition_div').innerHTML = "La multiplication des nombres jusqu'à " + nbr + " donne : "
+//     for (i = 1; i < nbr + 1; i++) {
+//         l = l * i
+//         document.getElementById('addition_div').innerHTML += i + "*"
+//     }
+//     document.getElementById('addition_div').innerHTML += "=" + l
+// }
