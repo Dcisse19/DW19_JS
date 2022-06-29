@@ -41,7 +41,7 @@ console.log(a)
 
 
 //   ============== LES TABLEAUX ==============
-// -------Calcul de moyenne -------------
+// -------EXO 1 : Calcul de moyenne -------------
 let tab = [3, 5, 3, 27, 7, 54];
 console.info(tab[2]) //affiche le chiffre qui correspond à lindice 2
 console.info(tab);
@@ -78,3 +78,70 @@ function mytabl_2(tabl) {
     return tabl;
 }
 console.table(mytabl_2(tab2));
+
+/**
+ * Fonction qui vont prendre en parametre un tableau qui retourne
+ *  EXO 1 : le nombre d'éléments dans un tableau
+ *  EXO 2 : la somme des éléments d'un tableau
+ *  EXO 3 : 'élément maximum d'un tableau
+ *  EXO 4 : l'élément minimum d'un tableau
+ *  EXO 5 : Trouver le premier élément supérieur à 500
+ *  BONUS : Copier les premiers éléments d'un tableau dont la somme fait au moins 500
+ */
+
+let tableau_3 = [12,351,10,92,173,722,4,70,29,126]; 
+// EXO 1
+function tabl_exo1(tabl){
+      return "Il y'a " +  tabl.length + " élements dans ce tableau.";
+} 
+console.info(tabl_exo1(tableau_3));
+
+// EXO 2
+function tabl_exo2(tabl){
+    let sum = 0;
+    for (let i=0; i<tabl.length; i++) {
+    sum = sum + tabl[i];
+    }
+    return "La somme des éléments vaut " + sum
+}
+console.info(tabl_exo2(tableau_3));
+
+// EXO 3
+function tabl_exo3(tabl){
+    let max = 0;
+    for (let i=0; i<tabl.length; i++) {
+     if(tabl[i] > max){
+        max = tabl[i];  
+     }
+    }
+    return "L'élément maximum du tableau est : " + max
+}
+console.info(tabl_exo3(tableau_3));
+
+// EXO 4
+function tabl_exo4(tabl){
+    let min = 10000000000;
+    for (let i=0; i<tabl.length; i++) {
+     if(tabl[i] < min){
+        min = tabl[i];  
+     }
+    }
+    return "L'élément minimum du tableau est : " + min
+}
+console.info(tabl_exo4(tableau_3));
+
+// EXO BONUS
+
+function tabl_exobonus(tabl){
+    let somme = 0;
+    let tabl_copy=[];
+    for (let i=0; i<tabl.length; i++) {
+     somme = somme + tabl[i]; 
+     tabl_copy[i] = tabl[i];  
+     if(somme >= 500){
+        return tabl_copy;  
+     }
+    }
+}
+console.table(tabl_exobonus(tableau_3));
+
