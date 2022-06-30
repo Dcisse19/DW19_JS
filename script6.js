@@ -89,7 +89,7 @@ console.table(mytabl_2(tab2));
  *  BONUS : Copier les premiers éléments d'un tableau dont la somme fait au moins 500
  */
 
-let tableau_3 = [12,351,10,92,173,722,4,70,29,126]; 
+let tableau_3 = [12,10,548,92,173,722,4,70,351,29,126]; 
 // EXO 1
 function tabl_exo1(tabl){
       return "Il y'a " +  tabl.length + " élements dans ce tableau.";
@@ -115,12 +115,13 @@ function tabl_exo3(tabl){
      }
     }
     return "L'élément maximum du tableau est : " + max
+    
 }
 console.info(tabl_exo3(tableau_3));
 
 // EXO 4
 function tabl_exo4(tabl){
-    let min = 10000000000;
+    let min = tabl[0];
     for (let i=0; i<tabl.length; i++) {
      if(tabl[i] < min){
         min = tabl[i];  
@@ -130,6 +131,31 @@ function tabl_exo4(tabl){
 }
 console.info(tabl_exo4(tableau_3));
 
+// EXO 5
+function tabl_exo5(tabl){
+    let borne = 500;
+    for (let i=0; i<tabl.length; i++) {
+     if(tabl[i] > borne){
+        borne = tabl[i];  
+        return "Le premier élément supérieur à 500 est : " + borne
+     }
+    }
+    
+}
+console.info(tabl_exo5(tableau_3));
+
+// EXO 5.2 (Paramètre, faire varier le nombre limite)
+function tabl_exo5_2(tabl,n){
+    let borne = n;
+    for (let i=0; i<tabl.length; i++) {
+     if(tabl[i] > borne){
+        borne = tabl[i];  
+        return "Le premier élément supérieur à " + n + " est : " + borne
+     }
+    }
+    
+}
+console.info(tabl_exo5_2(tableau_3,700));
 // EXO BONUS
 
 function tabl_exobonus(tabl){
@@ -143,5 +169,6 @@ function tabl_exobonus(tabl){
      }
     }
 }
+
 console.table(tabl_exobonus(tableau_3));
 
