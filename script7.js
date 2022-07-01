@@ -30,7 +30,7 @@ console.info(parite(9));
 
 // FONCTION 3
 function homonyme(prenom) {
-    if (prenom === diambere) {
+    if (prenom === 'diambere') {
         return true
     }
     else {
